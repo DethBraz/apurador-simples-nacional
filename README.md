@@ -1,5 +1,7 @@
 # Apurador Simples Nacional
 
+[![CI](https://github.com/DethBraz/apurador-simples-nacional/actions/workflows/ci.yml/badge.svg)](https://github.com/DethBraz/apurador-simples-nacional/actions/workflows/ci.yml)
+
 API REST de apuração do Simples Nacional: calcula o DAS de uma competência a partir
 do faturamento, com **tabelas de alíquota versionadas por vigência**.
 
