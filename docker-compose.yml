@@ -1,0 +1,31 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: apurador
+      POSTGRES_USER: apurador
+      POSTGRES_PASSWORD: apurador
+    ports:
+      - "5432:5432"
+    healthcheck:
+      # A API so sobe depois que o banco aceita conexao - sem isso o primeiro
+      # start falha por corrida de inicializacao.
+      test: ["CMD-SHELL", "pg_isready -U apurador -d apurador"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  api:
+    build: .
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DB_URL: jdbc:postgresql://db:5432/apurador
+      DB_USER: apurador
+      DB_PASSWORD: apurador
+      # Perfil dev carrega TABELAS FICTICIAS para a demo subir funcionando.
+      # Em producao, rode sem este perfil e importe as tabelas via POST /tabelas.
+      SPRING_PROFILES_ACTIVE: dev
+    ports:
+      - "8080:8080"
