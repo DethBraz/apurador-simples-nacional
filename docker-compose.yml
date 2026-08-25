@@ -24,8 +24,10 @@ services:
       DB_URL: jdbc:postgresql://db:5432/apurador
       DB_USER: apurador
       DB_PASSWORD: apurador
-      # Perfil dev carrega TABELAS FICTICIAS para a demo subir funcionando.
-      # Em producao, rode sem este perfil e importe as tabelas via POST /tabelas.
-      SPRING_PROFILES_ACTIVE: dev
+      # Sem perfil dev: a aplicacao sobe com a tabela vazia, como em producao.
+      # As tabelas oficiais estao em dados-oficiais/ e entram via POST /tabelas
+      # (veja dados-oficiais/README.md). Para voltar a demo com dados ficticios,
+      # descomente a linha abaixo.
+      # SPRING_PROFILES_ACTIVE: dev
     ports:
       - "8080:8080"

@@ -1,0 +1,97 @@
+{
+  "anexo": "ANEXO_I",
+  "vigenciaInicio": "2018-01-01",
+  "vigenciaFim": null,
+  "fonte": "LC 123/2006, Anexo I, redacao da LC 155/2016, vigencia 01/01/2018. Fonte: planalto.gov.br/ccivil_03/leis/lcp/lcp123.htm",
+  "faixas": [
+    {
+      "faixa": 1,
+      "limiteInferior": "0.00",
+      "limiteSuperior": "180000.00",
+      "aliquotaNominal": "0.040000",
+      "parcelaDeduzir": "0.00",
+      "reparticao": {
+        "IRPJ": "0.055000",
+        "CSLL": "0.035000",
+        "COFINS": "0.127400",
+        "PIS_PASEP": "0.027600",
+        "CPP": "0.415000",
+        "ICMS": "0.340000"
+      }
+    },
+    {
+      "faixa": 2,
+      "limiteInferior": "180000.00",
+      "limiteSuperior": "360000.00",
+      "aliquotaNominal": "0.073000",
+      "parcelaDeduzir": "5940.00",
+      "reparticao": {
+        "IRPJ": "0.055000",
+        "CSLL": "0.035000",
+        "COFINS": "0.127400",
+        "PIS_PASEP": "0.027600",
+        "CPP": "0.415000",
+        "ICMS": "0.340000"
+      }
+    },
+    {
+      "faixa": 3,
+      "limiteInferior": "360000.00",
+      "limiteSuperior": "720000.00",
+      "aliquotaNominal": "0.095000",
+      "parcelaDeduzir": "13860.00",
+      "reparticao": {
+        "IRPJ": "0.055000",
+        "CSLL": "0.035000",
+        "COFINS": "0.127400",
+        "PIS_PASEP": "0.027600",
+        "CPP": "0.420000",
+        "ICMS": "0.335000"
+      }
+    },
+    {
+      "faixa": 4,
+      "limiteInferior": "720000.00",
+      "limiteSuperior": "1800000.00",
+      "aliquotaNominal": "0.107000",
+      "parcelaDeduzir": "22500.00",
+      "reparticao": {
+        "IRPJ": "0.055000",
+        "CSLL": "0.035000",
+        "COFINS": "0.127400",
+        "PIS_PASEP": "0.027600",
+        "CPP": "0.420000",
+        "ICMS": "0.335000"
+      }
+    },
+    {
+      "faixa": 5,
+      "limiteInferior": "1800000.00",
+      "limiteSuperior": "3600000.00",
+      "aliquotaNominal": "0.143000",
+      "parcelaDeduzir": "87300.00",
+      "reparticao": {
+        "IRPJ": "0.055000",
+        "CSLL": "0.035000",
+        "COFINS": "0.127400",
+        "PIS_PASEP": "0.027600",
+        "CPP": "0.420000",
+        "ICMS": "0.335000"
+      }
+    },
+    {
+      "faixa": 6,
+      "limiteInferior": "3600000.00",
+      "limiteSuperior": "4800000.00",
+      "aliquotaNominal": "0.190000",
+      "parcelaDeduzir": "378000.00",
+      "reparticao": {
+        "IRPJ": "0.135000",
+        "CSLL": "0.100000",
+        "COFINS": "0.282700",
+        "PIS_PASEP": "0.061300",
+        "CPP": "0.421000"
+      }
+    }
+  ]
+}
